@@ -12,7 +12,7 @@ export default function Home() {
         <img className="m-24 animate-spin-slow" src="nodeicon.png" width="400px" />
         <h1 className="text-6xl font-bold ">
           What is {' '}
-          <a className="text-blue-400 animate-pulse" href="https://nextjs.org">
+          <a className="text-cyan-400 animate-pulse" href="https://nextjs.org">
             React ?
           </a>
         </h1>
