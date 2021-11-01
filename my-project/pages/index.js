@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import useful from '/components/useful'
+import Reactweb from '/components/reactweb'
 import Navbar from '/components/navbar'
 import Useful from '../components/useful'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -35,9 +35,12 @@ export default function Home() {
         hover:text-white py-3 px-8 my-7 border border-cyan-500 hover:border-transparent rounded-full">
           Let's Start
         </button>
+        <Useful />
+        <div className="text-5xl border-b text-cyan-400 rounded-2xl px-3 py-4 mt-20">
+                Website ที่พัฒนาด้วย Reactjs
+                </div>
 
-          <Useful />
-          
+        <Reactweb />
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 border-t">

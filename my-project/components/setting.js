@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook, faBookMedical, faCode, faCodeBranch, faCube, faCubes, faGripLines, faSearch, faUser } from "@fortawesome/free-solid-svg-icons";
 
-const Useful = () => (
+const Setting = () => (
 
   <div className="grid grid-cols-4 mt-24 divide-cyan-500 text-2xl ">
     <div></div>
@@ -35,4 +35,4 @@ const Useful = () => (
 
 )
 
-export default Useful
+export default Setting
