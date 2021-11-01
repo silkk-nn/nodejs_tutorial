@@ -1,67 +1,43 @@
 import Head from 'next/head'
+import useful from '/components/useful'
+import Navbar from '/components/navbar'
+import Useful from '../components/useful'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode, faGripLines, faSearch } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-col items-center justify-center min-h-screen">
       <Head>
-        <title>Node.js starter</title>
+        <title>React starter</title>
         <link rel="icon" href="/nodeicon.png" />
+        <script src="https://kit.fontawesome.com/44113b40f2.js" crossorigin="anonymous"></script>
       </Head>
-
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center ">
-        <img className="m-24 animate-spin-slow" src="nodeicon.png" width="400px" />
-        <h1 className="text-6xl font-bold ">
+      <Navbar />
+      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center "
+      >
+        <img className="m-20 animate-spin-slow" src="nodeicon.png" width="400px" />
+        <h1 className="text-6xl font-bold " style={{ minHeight: '100%' }}>
           What is {' '}
-          <a className="text-cyan-400 animate-pulse" href="https://nextjs.org">
+          <a className="text-cyan-400 animate-pulse " href="#">
             React ?
           </a>
         </h1>
-
-        <h2 className="mt-12 text-4xl font-bold font-bold">
-          {' '}
-        </h2>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className="grid grid-cols-5 m-16 text-center text-2xl w-25">
+          <div></div>
+          <div className="col-span-3">
+            <b className="text-cyan-500">React</b> เป็น JavaScript Libraly Free and Open-Source สำหรับสร้าง User Interface (UI) พัฒนาโดย Facebook เปิดตัวครั้งแรกในปี 2013
+            โดยลักษณะที่เห็นได้ชัด{"\t"} คือการออกแบบโครงสร้างแบบออกเป็นส่วนย่อยๆ หรือ Component{' '}
+          </div>
+          <div></div>
         </div>
+        <button className="bg-transparent text-2xl hover:bg-cyan-500 text-cyan-500 font-bold 
+        hover:text-white py-3 px-8 my-7 border border-cyan-500 hover:border-transparent rounded-full">
+          Let's Start
+        </button>
+
+          <Useful />
+          
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 border-t">
