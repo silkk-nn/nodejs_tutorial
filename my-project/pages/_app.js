@@ -1,5 +1,6 @@
 import 'tailwindcss/tailwind.css';
 import '../styles/globals.css';
+import '../styles/prism.css';
 import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;

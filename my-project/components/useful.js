@@ -4,12 +4,12 @@ import { faBook, faBookMedical, faCode, faCodeBranch, faCube, faCubes, faGripLin
 
 const Useful = () => (
 
-  <div className="grid grid-cols-4 mt-24 divide-cyan-500 text-2xl ">
+  <div className="grid grid-cols-4 mt-10 divide-cyan-500 text-2xl ">
     <div></div>
     <div className="col-span-2 ">
-      <div className="text-5xl my-16 text-cyan-400 font-bold ">
+      {/* <div className="text-4xl border-b py-2 rounded-2xl shadow-lg my-16 text-cyan-400 font-bold ">
         <h2>ทำไมต้อง React</h2>
-      </div>
+      </div> */}
       <div className="bg-blueGray-800 opacity-100 rounded-3xl p-5 m-10 shadow-md">
         <FontAwesomeIcon className="my-10" icon={faUser} color="white" size="3x"></FontAwesomeIcon>
         <h2 className="text-2xl mb-5 text-cyan-400 font-bold">Declarative</h2>

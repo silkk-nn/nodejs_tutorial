@@ -10,7 +10,7 @@ module.exports = {
       },
       colors: {
         cyan: colors.cyan,
-        secondary: colors.yellow,
+        lime: colors.lime,
         blueGray: colors.blueGray,
       },
     },

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Reactweb from '/components/reactweb'
 import Navbar from '/components/navbar'
 import Useful from '../components/useful'
+import Setting from '../components/setting'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faGripLines, faSearch } from "@fortawesome/free-solid-svg-icons";
 
@@ -10,6 +11,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-screen">
       <Head>
         <title>React starter</title>
+        <link href="/styles/prism.css" rel="stylesheet" />
         <link rel="icon" href="/nodeicon.png" />
         <script src="https://kit.fontawesome.com/44113b40f2.js" crossorigin="anonymous"></script>
       </Head>
@@ -19,11 +21,11 @@ export default function Home() {
         <img className="m-20 animate-spin-slow" src="nodeicon.png" width="400px" />
         <h1 className="text-6xl font-bold " style={{ minHeight: '100%' }}>
           What is {' '}
-          <a className="text-cyan-400 animate-pulse " href="#">
+          <a className="text-cyan-400 animate-pulse" href="#">
             React ?
           </a>
         </h1>
-        <div className="grid grid-cols-5 m-16 text-center text-2xl w-25">
+        <div className="grid grid-cols-5 m-16 text-center text-2xl">
           <div></div>
           <div className="col-span-3">
             <b className="text-cyan-500">React</b> เป็น JavaScript Libraly Free and Open-Source สำหรับสร้าง User Interface (UI) พัฒนาโดย Facebook เปิดตัวครั้งแรกในปี 2013
@@ -35,12 +37,19 @@ export default function Home() {
         hover:text-white py-3 px-8 my-7 border border-cyan-500 hover:border-transparent rounded-full">
           Let's Start
         </button>
+                <div className="text-5xl shadow-lg border-b text-cyan-400 rounded-2xl px-3 py-4 mt-20">
+                ทำไมต้อง React
+                </div>
         <Useful />
-        <div className="text-5xl border-b text-cyan-400 rounded-2xl px-3 py-4 mt-20">
+        <div className="text-5xl shadow-lg border-b text-cyan-400 rounded-2xl px-3 py-4 mt-20">
                 Website ที่พัฒนาด้วย Reactjs
                 </div>
 
         <Reactweb />
+        <div className="text-4xl shadow-lg border-b text-cyan-400 rounded-2xl px-3 py-4 mt-20">
+                เริ่มต้นการการใช้งาน React
+                </div>
+        <Setting />
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 border-t">
