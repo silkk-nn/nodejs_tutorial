@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/nodeicon.png" />
         <script src="https://kit.fontawesome.com/44113b40f2.js" crossorigin="anonymous"></script>
       </Head>
-      <Navbar />
+      {/* <Navbar /> */}
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center "
       >
         <img className="m-20 animate-spin-slow" src="nodeicon.png" width="400px" />
@@ -33,11 +33,13 @@ export default function Home() {
           </div>
           <div></div>
         </div>
+        <a href="#start">
         <button className="bg-transparent text-2xl hover:bg-cyan-500 text-cyan-500 font-bold 
         hover:text-white py-3 px-8 my-7 border border-cyan-500 hover:border-transparent rounded-full">
           Let's Start
         </button>
-                <div className="text-5xl shadow-lg border-b text-cyan-400 rounded-2xl px-3 py-4 mt-20">
+        </a>
+                <div id='start' className="text-5xl shadow-lg border-b text-cyan-400 rounded-2xl px-3 py-4 mt-20">
                 ทำไมต้อง React
                 </div>
         <Useful />
@@ -53,15 +55,7 @@ export default function Home() {
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
+        <h2>จัดทำโดย นาย นนทพัทธ์ เทศปัญ 63070228 ในรายวิชา Webtechnology</h2>
       </footer>
     </div>
   )
