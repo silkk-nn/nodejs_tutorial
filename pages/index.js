@@ -11,12 +11,11 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-screen">
       <Head>
         <title>React starter</title>
-        <link href="/styles/prism.css" rel="stylesheet" />
-        <link rel="icon" href="/nodeicon.png" />
+        <link rel="icon" href="./nodeicon.png" />
         <script src="https://kit.fontawesome.com/44113b40f2.js" crossorigin="anonymous"></script>
       </Head>
       {/* <Navbar /> */}
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center "
+      <main className="flex flex-col items-center justify-center flex-1 w-full px-20 text-center "
       >
         <img className="m-20 animate-spin-slow" src="nodeicon.png" width="400px" />
         <h1 className="text-6xl font-bold " style={{ minHeight: '100%' }}>
@@ -25,7 +24,7 @@ export default function Home() {
             React ?
           </a>
         </h1>
-        <div className="grid grid-cols-5 m-16 text-center text-2xl">
+        <div className="grid grid-cols-5 m-16 text-2xl text-center">
           <div></div>
           <div className="col-span-3">
             <b className="text-cyan-500">React</b> เป็น JavaScript Libraly Free and Open-Source สำหรับสร้าง User Interface (UI) พัฒนาโดย Facebook เปิดตัวครั้งแรกในปี 2013
@@ -34,21 +33,20 @@ export default function Home() {
           <div></div>
         </div>
         <a href="#start">
-        <button className="bg-transparent text-2xl hover:bg-cyan-500 text-cyan-500 font-bold 
-        hover:text-white py-3 px-8 my-7 border border-cyan-500 hover:border-transparent rounded-full">
+        <button className="px-8 py-3 text-2xl font-bold bg-transparent border rounded-full hover:bg-cyan-500 text-cyan-500 hover:text-white my-7 border-cyan-500 hover:border-transparent">
           Let's Start
         </button>
         </a>
-                <div id='start' className="text-5xl shadow-lg border-b text-cyan-400 rounded-2xl px-3 py-4 mt-20">
+                <div id='start' className="px-3 py-4 mt-20 text-5xl border-b shadow-lg text-cyan-400 rounded-2xl">
                 ทำไมต้อง React
                 </div>
         <Useful />
-        <div className="text-5xl shadow-lg border-b text-cyan-400 rounded-2xl px-3 py-4 mt-20">
+        <div className="px-3 py-4 mt-20 text-5xl border-b shadow-lg text-cyan-400 rounded-2xl">
                 Website ที่พัฒนาด้วย Reactjs
                 </div>
 
         <Reactweb />
-        <div className="text-4xl shadow-lg border-b text-cyan-400 rounded-2xl px-3 py-4 mt-20">
+        <div className="px-3 py-4 mt-20 text-4xl border-b shadow-lg text-cyan-400 rounded-2xl">
                 เริ่มต้นการการใช้งาน React
                 </div>
         <Setting />

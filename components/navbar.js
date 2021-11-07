@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
 const Navbar = () => (
-      <nav className="bg-blueGray-800 items-center text-center justify-center sticky border-b top-0 w-full">
+      <nav className="sticky top-0 items-center justify-center w-full text-center border-b bg-blueGray-800">
         <div
-          className="max-w-screen-lg mx-auto hidden sm:flex flex-row items-center p-5"
+          className="flex-row items-center hidden max-w-screen-lg p-5 mx-auto sm:flex"
           style={{ height: '80px' }}
         >
           <a href="#">
-            <img src="/Reactlogo.png" width={150}/>
+            <img src="./Reactlogo.png" width={150}/>
           </a>
         </div>
       </nav>
