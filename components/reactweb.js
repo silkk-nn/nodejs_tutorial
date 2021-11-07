@@ -2,10 +2,10 @@ import Link from 'next/link'
 
 const Reactweb = () => (
 
-    <div className="grid grid-cols-6 mt-20">
+    <div className="grid grid-cols-7 mt-20">
         <div className="col-span-2"></div>
 
-        <div className="col-span-2 w-auto">
+        <div className="col-span-3 w-auto">
             <img src="fb_hero.jpeg" className="w-full my-10 items-center" />
             <h2 className="text-2xl my-10 px-5 py-1 bg-blue-800 text-white">Facebook</h2>
             <h2 className="text-xl">Website Social Network ซึ่งเป็นที่นิยมในปัจจุบัน ก่อตั้งโดย Mark Zuckerberg CEO บริษัท Meta</h2>
